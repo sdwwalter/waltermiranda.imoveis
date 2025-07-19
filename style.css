@@ -70,16 +70,18 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 30px;
   justify-content: center;
+
+  /* força todos os itens a iniciarem no topo da célula */
+  align-items: start;
+  /* garante que cada linha de grid só use a altura necessária */
+  grid-auto-rows: auto;
 }
 
-/* Link que envolve o card */
-.property-card-link {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-}
-
+/* ajusta cada card dentro da grid */
 .property-card {
+  /* garante que cada card fixe-se no início da célula de grid */
+  align-self: start;
+
   background-color: #1a2d20;
   border: 1px solid #d4af37;
   border-radius: 12px;
@@ -97,11 +99,22 @@ footer {
   box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
 }
 
+/* Ajustes para imagens */
 .property-card img {
   width: 100%;
-  height: 220px;
+  max-height: 220px; /* altura máxima para fotos maiores */
+  height: auto;      /* mantém proporção */
   object-fit: cover;
+  display: block;    /* evita espaçamento inline */
+  background-color: #051616; /* fallback caso a imagem não carregue */
   border-bottom: 1px solid #d4af37;
+}
+
+/* Link que envolve o card */
+.property-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
 .property-card-content {
@@ -152,149 +165,149 @@ footer {
 }
 
 .property-card:hover .btn-contact-fake {
-    background-color: #f0cf5d;
+  background-color: #f0cf5d;
 }
 
 /* Selo de Destaque */
 .property-badge {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    background-color: #d4af37;
-    color: #000;
-    padding: 6px 12px;
-    border-radius: 5px;
-    font-size: 13px;
-    font-weight: bold;
-    z-index: 2;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: #d4af37;
+  color: #000;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: bold;
+  z-index: 2;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
 }
-
 
 /* === PÁGINA DE DETALHES DO IMÓVEL (IMOVEL.HTML) === */
 
 .property-detail-container {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 20px;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
 .property-detail-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 36px;
-    color: #d4af37;
-    margin-bottom: 5px;
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  color: #d4af37;
+  margin-bottom: 5px;
 }
 
 .property-detail-location {
-    font-size: 18px;
-    color: #ccc;
-    margin-top: 0;
-    margin-bottom: 30px;
+  font-size: 18px;
+  color: #ccc;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 .property-gallery {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .gallery-main-image {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 12px;
-    border: 2px solid #d4af37;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #d4af37;
 }
 
 .gallery-thumbnails {
-    display: flex;
-    gap: 10px;
-    margin-top: 15px;
-    justify-content: center;
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  justify-content: center;
 }
 
 .gallery-thumb {
-    width: 100px;
-    height: 75px;
-    object-fit: cover;
-    border-radius: 8px;
-    cursor: pointer;
-    border: 2px solid transparent;
-    transition: border-color 0.3s, opacity 0.3s;
-    opacity: 0.7;
+  width: 100px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.3s, opacity 0.3s;
+  opacity: 0.7;
 }
 
-.gallery-thumb:hover, .gallery-thumb.active {
-    border-color: #d4af37;
-    opacity: 1;
+.gallery-thumb:hover,
+.gallery-thumb.active {
+  border-color: #d4af37;
+  opacity: 1;
 }
 
 .property-detail-flex {
-    display: flex;
-    gap: 40px;
+  display: flex;
+  gap: 40px;
 }
 
 .property-main-info {
-    flex-basis: 65%;
+  flex-basis: 65%;
 }
 
 .property-main-info h3 {
-    font-family: 'Playfair Display', serif;
-    color: #f8e7b2;
-    border-bottom: 1px solid #d4af37;
-    padding-bottom: 5px;
-    margin-top: 0;
-    margin-bottom: 15px;
+  font-family: 'Playfair Display', serif;
+  color: #f8e7b2;
+  border-bottom: 1px solid #d4af37;
+  padding-bottom: 5px;
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 
 .features-list {
-    list-style: none;
-    padding: 0;
-    columns: 2;
-    gap: 10px;
+  list-style: none;
+  padding: 0;
+  columns: 2;
+  gap: 10px;
 }
 
 .features-list li {
-    color: #ccc;
-    margin-bottom: 10px;
+  color: #ccc;
+  margin-bottom: 10px;
 }
 
 .property-side-info {
-    flex-basis: 35%;
-    background-color: #1a2d20;
-    padding: 25px;
-    border-radius: 12px;
-    border: 1px solid #d4af37;
-    height: fit-content;
-    position: sticky;
-    top: 20px;
+  flex-basis: 35%;
+  background-color: #1a2d20;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #d4af37;
+  height: fit-content;
+  position: sticky;
+  top: 20px;
 }
 
 .price-box {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .price-label {
-    display: block;
-    font-size: 16px;
-    color: #ccc;
+  display: block;
+  font-size: 16px;
+  color: #ccc;
 }
 
 .price-value {
-    display: block;
-    font-family: 'Playfair Display', serif;
-    font-size: 38px;
-    font-weight: bold;
-    color: #d4af37;
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-size: 38px;
+  font-weight: bold;
+  color: #d4af37;
 }
 
 .property-map-section {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .property-map-section h3 {
-    font-family: 'Playfair Display', serif;
-    color: #f8e7b2;
+  font-family: 'Playfair Display', serif;
+  color: #f8e7b2;
 }
 
 /* === BOTÕES GERAIS === */
@@ -312,7 +325,7 @@ footer {
 }
 
 .btn-primary {
-  background-color: #25D366; /* Verde WhatsApp */
+  background-color: #25D366; /* Verde WhatsApp */   
   color: #fff;
   font-weight: bold;
 }
@@ -336,8 +349,8 @@ footer {
 }
 
 .btn-full {
-    width: 100%;
-    box-sizing: border-box;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .back-to-home {
@@ -353,6 +366,7 @@ footer {
   right: 20px;
   z-index: 999;
 }
+
 .whatsapp-icon {
   width: 60px;
   height: 60px;
@@ -360,9 +374,11 @@ footer {
   box-shadow: 0 0 12px #25D366;
   transition: transform 0.3s ease;
 }
+
 .whatsapp-icon:hover {
   transform: scale(1.1);
 }
+
 .whatsapp-balloon {
   display: none;
   position: absolute;
@@ -377,21 +393,25 @@ footer {
   font-size: 14px;
   box-shadow: 0 0 10px #25D366;
 }
+
 .balloon-img {
   width: 50px;
   float: left;
   margin-right: 10px;
   border-radius: 50%;
 }
+
 .balloon-text p {
   margin: 0;
   line-height: 1.4;
 }
+
 .whatsapp-link {
   color: #fff;
   font-weight: bold;
   text-decoration: underline;
 }
+
 @media (hover: hover) {
   .whatsapp-float:hover .whatsapp-balloon {
     display: block;
