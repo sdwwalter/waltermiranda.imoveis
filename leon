@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Residencial Leon | Walter Miranda</title>
+  <meta name="description" content="Lançamento em Londrina! Apartamentos de 2 quartos com sacada gourmet e quintal. Saiba mais com Walter Miranda." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Residencial Leon</h1>
+  </header>
+  <main>
+    <section class="gallery">
+      <img src="https://i.ibb.co/7j2yB2f/leon-mrv.jpg" alt="Residencial Leon" />
+    </section>
+    <section class="property-description">
+      <h2 class="property-detail-title">Residencial Leon – Jardim Barcelona, Londrina</h2>
+      <p>Oportunidade única em Londrina! Apartamentos de 2 dormitórios com sacada gourmet, piso laminado, e opções com quintal privativo. Localização privilegiada no Jardim Barcelona, com fácil acesso ao centro e às vias principais da zona norte. Ideal para famílias e investidores.</p>
+      <ul>
+        <li>2 dormitórios</li>
+        <li>Sacada com churrasqueira</li>
+        <li>Opção de unidade térrea com quintal</li>
+        <li>Pet place, playground e piscina</li>
+        <li>Financiamento com subsídio até R$ 75 mil</li>
+      </ul>
+      <p class="price">A partir de R$ 215.000</p>
+      <a class="cta-button" href="https://wa.me/5543988616329?text=Ol%C3%A1%2C+Walter%21+Quero+saber+mais+sobre+o+Residencial+Leon." target="_blank">Falar com Walter no WhatsApp</a>
+    </section>
+    <section class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.8845633738024!2d-51.199665!3d-23.013525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eb436c48e46947%3A0xf2db4c0a3ddbd437!2sJardim%20Barcelona%2C%20Londrina%20-%20PR!5e0!3m2!1spt-BR!2sbr!4v1624301802814!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Walter Miranda | CRECI PR F-53.460</p>
+  </footer>
+</body>
+</html>
