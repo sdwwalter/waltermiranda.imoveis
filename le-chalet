@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Residencial Le Chalet | Walter Miranda</title>
+  <meta name="description" content="Últimas unidades! Estúdios e apartamentos com sacada gourmet no Jardim Pinheiros. Conheça com Walter Miranda." />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .tag-alert {
+      display: inline-block;
+      background-color: #e63946;
+      color: #fff;
+      font-weight: bold;
+      padding: 5px 12px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Residencial Le Chalet</h1>
+  </header>
+  <main>
+    <section class="gallery">
+      <img src="https://i.ibb.co/3SkTmbK/le-chalet.jpg" alt="Residencial Le Chalet" />
+    </section>
+    <section class="property-description">
+      <span class="tag-alert">Últimas unidades • Estúdios a partir de R$ 320 mil</span>
+      <h2 class="property-detail-title">Le Chalet – Jardim Pinheiros, Londrina</h2>
+      <p>Empreendimento da linha MRV Class em Londrina, o Le Chalet oferece estúdios e apartamentos de 1 e 2 quartos com sacada gourmet, suíte e vaga coberta. Elevadores em todas as torres e acabamento diferenciado. Ideal para quem busca conforto, localização privilegiada e valorização.</p>
+      <ul>
+        <li>Estúdios e apartamentos com 1 ou 2 quartos</li>
+        <li>Sacada gourmet com churrasqueira</li>
+        <li>Torre com elevador</li>
+        <li>Lazer completo: piscina, salão de festas, coworking, pet place e lavanderia</li>
+        <li>Energia solar e sustentabilidade</li>
+      </ul>
+      <p class="price">Estúdios a partir de R$ 320.000</p>
+      <a class="cta-button" href="https://wa.me/5543988616329?text=Ol%C3%A1%2C+Walter%21+Tenho+interesse+no+Le+Chalet." target="_blank">Falar com Walter no WhatsApp</a>
+    </section>
+    <section class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.1312344312224!2d-51.149121!3d-23.004889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eb42265a0b7e17%3A0x8f142c9a68c4f7!2sJardim%20Pinheiros%2C%20Londrina%20-%20PR!5e0!3m2!1spt-BR!2sbr!4v1624302742248!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Walter Miranda | CRECI PR F-53.460</p>
+  </footer>
+</body>
+</html>
